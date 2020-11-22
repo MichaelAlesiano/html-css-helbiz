@@ -1,0 +1,379 @@
+/* General rules */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #212529;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+.container {
+  max-width: 1392px;
+  margin: 0 auto;
+}
+
+/* Menu header */
+.header-nav {
+  height: 80px;
+  line-height: 80px;
+}
+
+/* Menu mobile */
+.nav-hamb i {
+  margin-right: 50px;
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+
+/* Logo */
+.logo img {
+  vertical-align: text-bottom;
+}
+
+/* Menu principale */
+.main-nav ul li {
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1060px) {
+  .main-nav ul li {
+    margin-right: 15px;
+  }
+}
+
+.main-nav ul li a {
+  font-weight: 600;
+  font-size: 0.8em;
+  color: #343434;
+}
+
+/* Cambio lingua */
+.lang-nav {
+  padding-left: 40px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 680px;
+  position: relative;
+}
+
+.jumbotron .testo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.testo h1 {
+  font-size: 3em;
+  margin-bottom: 25px;
+}
+
+/* Responsive Jumbotron */
+@media screen and (max-width: 494px) {
+  .testo h1 {
+    font-size: 2.5em;
+  }
+}
+
+/* Main */
+/* Sezione prodotti */
+.products [class*="col-"] {
+  padding: 50px 20px;
+}
+
+.products .row {
+  background-color: #fafafa;
+  padding: 30px;
+}
+
+
+.products .row p:first-child {
+  font-size: 2.2em;
+  font-weight: 300;
+}
+
+.products p strong {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.products .row p:nth-child(2) {
+  font-size: 1.2em;
+}
+
+.products a {
+  display: block;
+  color: #0070c8;
+}
+
+.products a:hover {
+  text-decoration: underline;
+}
+
+.products img {
+  height: 350px;
+}
+
+@media screen and (max-width: 520px) {
+  .products img {
+    height: 270px;
+  }
+}
+
+/* Sezione How it Works */
+.hiw {
+  background-image: url(../img/index-banner.1f6fd0a.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 720px;
+}
+
+.hiw .container {
+  margin-top: 120px;
+  vertical-align: sub;
+}
+
+.hiw .container [class*="col-"] {
+  padding: 0 20px;
+}
+
+.hiw .container h2 {
+  padding: 0 0 0 160px;
+}
+
+
+.hiw img {
+  height: 550px;
+}
+
+.mt-450 {
+  margin-top: 450px;
+}
+
+/* Sezione mobility */
+.mobility {
+  background-image: url(../img/scooter.f0a0397.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 540px;
+  color: white;
+  position: relative;
+}
+
+.mobility .row [class*="col-"] {
+  padding: 0 150px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+}
+
+.mobility .row [class*="col-"] h2 {
+  font-size: 2.8em;
+}
+
+.mobility .row [class*="col-"] p {
+  font-size: 1.4em;
+  padding-bottom: 30px;
+}
+
+.mobility .row [class*="col-"] a {
+  font-size: 1.2em;
+  color: white;
+}
+
+.mobility .row [class*="col-"] a:hover {
+  text-decoration: underline;
+}
+
+/* Sezione download App */
+.app {
+  height: 400px;
+}
+
+.app .pad-row {
+  height: 100%;
+}
+
+.app .tel-app {
+  background-image: linear-gradient(#3c4f61, #212529);
+}
+
+.tel-app,
+.city-app {
+  color: white;
+  height: 100%;
+  padding-top: 30px;
+}
+
+.tel-app .row {
+  background-image: url(../img/iphone-bg.2dae1bd.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center -90%;
+}
+
+.app .city-app {
+  height: 100%;
+  background-image: url(../img/city.7c8c928.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app h2 {
+  font-size: 2em;
+}
+
+.app p {
+  font-size: 1.5em;
+}
+
+.app a {
+  color: white;
+  font-size: 1.5em;
+  margin: 0 10px;
+}
+
+.app a:hover {
+  text-decoration: underline;
+}
+
+/* Sezione HelbizFamily */
+.family {
+  height: 402px;
+  background-image: url(../img/image-wall.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 30px 0;
+  position: relative;
+}
+
+.family .social-place {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 500px;
+  background-color: #fff;
+  padding-top: 50px;
+}
+
+.family .social-place h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.family .social-place i {
+  font-size: 1.8em;
+}
+
+.family .social-place :not(:last-child) i {
+  margin-right: 30px;
+}
+
+.family .social-place i:hover {
+  cursor: pointer;
+  color: #ad9e8f;
+}
+
+/* Footer */
+footer {
+  height: 650px;
+  background-color: black;
+  color: white;
+}
+
+footer .container {
+  padding: 100px 100px 0;
+}
+
+footer .container a {
+  color: white;
+}
+
+footer .container li {
+  display: block;
+}
+
+.footer-nav .footer-logo {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  letter-spacing: 9px;
+}
+
+.footer-nav .footer-products h3,
+.footer-nav .footer-info h3,
+.footer-nav .footer-contact h3 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.footer-nav li {
+  margin-bottom: 20px;
+}
+
+footer hr {
+  opacity: 0.3;
+}
+
+.footer-nav li a {
+  font-weight: 400;
+  color: lightgray;
+  opacity: 0.6;
+}
+
+.footer-nav li a:hover {
+  font-weight: 400;
+  color: white;
+  opacity: 1;
+}
+
+.footer-terms {
+  height: 30px;
+  line-height: 20px;
+  text-align: left;
+  margin: 40px 0;
+}
+
+.footer-terms [class*="col-"] li {
+  display: inline-block;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.footer-terms .footer-terms-right {
+  padding-top: 10px;
+}
+
+.footer-app {
+  margin-top: 40px;
+}
+
+.footer-app img {
+  border: 1px solid white;
+  border-radius: 5px;
+}
